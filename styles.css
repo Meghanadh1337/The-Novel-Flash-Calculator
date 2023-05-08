@@ -1,0 +1,104 @@
+body {
+    background-color:lightpink;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .calculator {
+    max-width: 300px;
+    margin: 20px auto;
+    background-color:skyblue;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  input[type="text"] {
+    width: 95%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    text-align: center;
+    background-color: whitesmoke;
+    color: #333333;
+    border-radius: 5px;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);/*sizing of grid*/
+    grid-gap: 5px;
+  }
+
+/* ...existing styles... */
+
+button:hover {/*on hovering it appeears bigger than usual*/
+    background-color: snow;
+    transform: scale(1.05);
+    font-weight: bold;
+  }
+  
+  button:active {/*on clicking button it appears smaller*/
+    background-color: whitesmoke;
+    transform: scale(0.95);
+  }
+  
+
+  button {
+    padding: 15px;
+    font-size: 20px;
+    background-color:white;
+    color:crimson;
+    border: none;
+    border-radius: 5px;
+    cursor:pointer;
+    transition: background-color 0.3s;
+  }
+  
+  
+  button.equal {
+    background-color:pink;
+    color: #ffffff;
+  }
+  
+  button.equal:hover {
+    background-color: #f57c00;
+  }
+  
+  button.ac {
+    background-color: #f44336;
+    color: #ffffff;
+  }
+  
+  button.ac:hover {
+    background-color: #d32f2f;
+  }
+  
+  button.modulo, button.square {
+    background-color: #4caf50;
+    color: #ffffff;
+  }
+  
+  button.modulo:hover, button.square:hover {
+    background-color: red;
+  }
+  
+  /*flashing*/
+/*The flashing animation adds a dynamic visual element to these interactions, making the calculator more engaging and intuitive for the user. It helps draw attention to specific actions or states, enhancing the user experience.
+It is one of UI components*/
+.flash {
+    animation: flashAnimation 0.3s linear;
+  }
+  
+  @keyframes flashAnimation {
+    0% {
+      background-color: #ffffff;
+    }
+    50% {
+      background-color:lightgreen;
+    }
+    100% {
+      background-color: #ffffff;
+    }
+  }
+  

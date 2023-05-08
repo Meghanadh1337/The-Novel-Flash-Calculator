@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Calculator Project Date:7-3-2023</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="calculator">
+    <input type="text" id="result" disabled>
+    <div class="buttons">
+      <button onclick="clearText()">AC</button>
+      <button onclick="appendValue(this.innerText)">1</button>
+      <button onclick="appendValue(this.innerText)">2</button>
+      <button onclick="appendValue(this.innerText)">3</button>
+      <button onclick="appendOp(this.innerText)">/</button>
+      <button onclick="appendValue(this.innerText)">4</button>
+      <button onclick="appendValue(this.innerText)">5</button>
+      <button onclick="appendValue(this.innerText)">6</button>
+      <button onclick="appendOp(this.innerText)">*</button>
+      <button onclick="appendValue(this.innerText)">7</button>
+      <button onclick="appendValue(this.innerText)">8</button>
+      <button onclick="appendValue(this.innerText)">9</button>
+      <button onclick="appendOp(this.innerText)">-</button>
+      <button onclick="appendValue(this.innerText)">0</button>
+      <button onclick="appendValue('.')">.</button>
+      <button onclick="calculate()">=</button>
+      <button onclick="appendOp(this.innerText)">+</button>
+      <button onclick="Modulo()">%</button>             
+      <button onclick="Square()">x²</button> <!-- Mod and Square have been included because programmers need them frequently during calculation-->
+    </div>
+  </div>
+
+  <script src="calculator.js"></script>
+</body>
+</html>
